@@ -33,4 +33,9 @@ public class OrderLineService implements IntOrderLineService {
                 .orElseThrow(()->
                         new OrderLineControllerException("No order line found for order_id:"+idOrder+" and product_id:"+idProduct));
     }
+
+    @Override
+    public OrderLine save(OrderLine orderLine) {
+        return orderLineRepository.save(orderLine);
+    }
 }
