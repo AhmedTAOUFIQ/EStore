@@ -1,0 +1,25 @@
+.cross-alert{
+    position: absolute;
+    top:1px;
+    right: 9px;
+    font-size: 40px;
+}
+#my-element{
+   display: none;
+    position: relative;
+}
+.bg-footer{
+    background-color:RGBA(94,117,144,0.57);
+}
+.footer-position{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.body-full{
+    height: 100vh;
+}
+.bg-footer-copyright{
+    background-color: rgba(0, 0, 0, 0.2);
+}
