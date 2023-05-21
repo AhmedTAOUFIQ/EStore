@@ -1,5 +1,6 @@
 package com.example.filrougefo.service.order;
 import com.example.filrougefo.entity.Order;
+import com.example.filrougefo.entity.OrderLine;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -14,5 +15,6 @@ public interface IntOrderService {
     List<Order> findAllOrdersByStatus_Name(String name);
     List<Order> findAllByOrdersBeforeChosenDate(LocalDate date);
     Order findOrderById(long id);
+    void addOrderLineToOrder(int productId, long quantity);
 
 }

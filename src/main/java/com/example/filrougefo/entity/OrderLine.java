@@ -20,4 +20,9 @@ public class OrderLine {
     private BigDecimal quantity;
     private BigDecimal discount;
 
+    public OrderLine(Order order, Product product, long quantity) {
+        this.order = order;
+        this.product = product;
+        this.quantity = BigDecimal.valueOf(quantity);
+    }
 }
